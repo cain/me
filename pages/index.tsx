@@ -11,20 +11,22 @@ import {
 } from '@chakra-ui/core'
 
 import { Hero } from '../components/Hero'
-import { Container } from '../components/Container'
-import { Main } from '../components/Main'
+import { Layout } from '../components/Page/Layout'
+import { SectionWriting } from '../components/SectionWriting'
+import { SectionProjects } from '../components/SectionProjects'
 import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
 import { Footer } from '../components/Footer'
 
 const Index = () => (
-  <Container>
+  <Layout>
     <Hero />
+    <SectionWriting />
+    <SectionProjects />
     <DarkModeSwitch />
     <Footer>
       {/* <Text>Next ❤️ Chakra</Text> */}
     </Footer>
-  </Container>
+  </Layout>
 )
 
 export default withTheme(Index)
